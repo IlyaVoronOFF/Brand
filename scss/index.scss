@@ -215,3 +215,73 @@
         color: white;
     }
 }
+
+//discount=====================================================================================
+.discount {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 529px;
+    margin: 97px auto;
+    background-color: #222224;
+    &__item {
+        display: flex;
+        width: 373px;
+        img {
+            height: 40px;
+            width: 40px;
+            margin: 0 33px;
+            object-fit: contain;
+        }
+        .item__text {
+            color: white;
+            margin-right: 43px;
+            h1 {
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+                margin-bottom: 17px;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 24px;
+                letter-spacing: 0.35px;
+            }
+        }
+    }
+    &__banner {
+        display: flex;
+        height: inherit;
+        width: 767px;
+        position: relative;
+        img {
+            height: inherit;
+            width: inherit;
+            object-fit: cover;
+        }
+        .banner__title {
+            position: absolute;
+            top: 146px;
+            left: 39px;
+            h1 {
+                font-size: 53px;
+                font-weight: bold;
+                letter-spacing: 0.8px;
+                color: white;
+                text-transform: uppercase;
+                span {
+                    color: #f16d7f;
+                }
+            }
+            p {
+                font-size: 32px;
+                font-weight: bold;
+                letter-spacing: 0.8px;
+                color: white;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
