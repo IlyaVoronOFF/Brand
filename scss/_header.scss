@@ -68,12 +68,13 @@
         border: none;
         outline: none;
         padding: 0 16px;
+        transition: all 0.3s ease-in-out;
         &::placeholder {
             opacity: 0.5;
         }
-    }
-    &:hover {
-        border: solid 1px #222222;
+        &:hover {
+            box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+        }
     }
     button {
         border: none;
