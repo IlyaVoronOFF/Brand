@@ -1,0 +1,40 @@
+.submenu-wrap {
+    background-color: #f8f3f4;
+    .submenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 148px;
+        h1 {
+            font-size: 24px;
+            font-weight: 900;
+            color: #f16d7f;
+            text-transform: uppercase;
+        }
+        .submenu-links {
+            a {
+                font-size: 14px;
+                font-weight: 400;
+                color: #636363;
+                text-transform: uppercase;
+                text-decoration: none;
+                &:hover {
+                    color: #f16d7f;
+                }
+            }
+             ::after {
+                content: " /";
+            }
+             :last-child {
+                font-weight: bold;
+                color: #f16d7f;
+            }
+        }
+    }
+}
+
+.submenu-links a:last-child::after {
+    visibility: hidden;
+}
+
+//product-details====================================================================================

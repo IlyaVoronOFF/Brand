@@ -1,0 +1,48 @@
+.submenu-wrap {
+  background-color: #f8f3f4;
+}
+
+.submenu-wrap .submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 148px;
+}
+
+.submenu-wrap .submenu h1 {
+  font-size: 24px;
+  font-weight: 900;
+  color: #f16d7f;
+  text-transform: uppercase;
+}
+
+.submenu-wrap .submenu .submenu-links a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #636363;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.submenu-wrap .submenu .submenu-links a:hover {
+  color: #f16d7f;
+}
+
+.submenu-wrap .submenu .submenu-links ::after {
+  content: " /";
+}
+
+.submenu-wrap .submenu .submenu-links :last-child {
+  font-weight: bold;
+  color: #f16d7f;
+}
+
+.submenu-links a:last-child::after {
+  visibility: hidden;
+}
