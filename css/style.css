@@ -481,7 +481,7 @@ ul {
           flex: 1;
 }
 
-.footer-top .footer__menu .column-menu h1 {
+.footer-top .footer__menu .column-menu h2 {
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.45px;
@@ -1265,10 +1265,6 @@ ul {
   margin-bottom: 20px;
 }
 
-.order-registration__item form input:first-child {
-  position: relative;
-}
-
 .order-registration__item form input:hover {
   -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
           box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
@@ -1276,19 +1272,6 @@ ul {
   transition: -webkit-box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-}
-
-.order-registration__item form input:hover :first-child i {
-  opacity: 0;
-  display: none;
-  visibility: hidden;
-}
-
-.order-registration__item form i {
-  position: absolute;
-  margin-top: 15px;
-  margin-left: 308px;
-  color: #eaeaea;
 }
 
 .order-registration__item form ::-webkit-input-placeholder {
@@ -1433,8 +1416,4 @@ ul {
   transition: -webkit-box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
-}
-
-.order-registration__item form input:first-child [role="combobox"] {
-  visibility: visible;
 }
