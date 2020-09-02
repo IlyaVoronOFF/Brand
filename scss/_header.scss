@@ -11,12 +11,25 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    img {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
 }
 
 .head-right {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    img {
+        height: 27px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
 }
 
 .logo {
@@ -141,7 +154,7 @@ ul {
             text-decoration: none;
             text-transform: uppercase;
             color: #222222;
-            padding: 10px 20px;
+            padding: 15px 20px;
             transition: all 0.3s ease-in-out;
         }
     }
@@ -154,5 +167,5 @@ ul {
 }
 
 .active {
-    border-bottom: 2px solid #222222;
+    border-bottom: 3px solid #f16d7f;
 }
