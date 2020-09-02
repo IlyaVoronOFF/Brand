@@ -47,6 +47,7 @@
                         width: 38px;
                         margin-right: 13px;
                         border: 2px solid #e6e6e6;
+                        transition: all 0.3s ease-in-out;
                         &:hover {
                             border-color: #f16d7f;
                         }
@@ -95,7 +96,8 @@
                         &::placeholder {
                             opacity: 0.7;
                         }
-                        &:hover {
+                        &:hover,
+                        &:focus {
                             box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
                         }
                     }
@@ -129,6 +131,12 @@
     margin-bottom: 89px;
     .footer__description {
         width: 39%;
+        img {
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
         p {
             font-size: 14px;
             font-weight: 400;
@@ -166,11 +174,24 @@
                 color: #898989;
                 text-transform: capitalize;
                 text-decoration: none;
+                position: relative;
                 transition: all 0.3s ease-in-out;
-                &:hover {
-                    text-decoration: underline;
+                &:hover,
+                &:hover::after {
                     color: #222222;
+                    width: 100%;
                 }
+            }
+             ::after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 2px;
+                width: 0;
+                background-color: #222222;
+                transition: width 0.3s ease-in-out;
             }
         }
     }
@@ -199,6 +220,7 @@
             transition: all 0.3s ease-in-out;
             &:hover {
                 background-color: #f16d7f;
+                transform: scale(1.1);
             }
             i {
                 font-size: 16px;
