@@ -4,19 +4,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    flex-wrap: wrap;
+    padding: 25px 0;
 }
 
 .head-left {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    img {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
 }
 
 .head-right {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    img {
+        height: 27px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
 }
 
 .logo {
@@ -50,18 +64,40 @@
     overflow: hidden;
     display: flex;
     align-items: stretch;
-    transition: border 0.3s ease-in-out;
+    transition: border 0.2s ease-in-out;
     a {
+        height: 38px;
+        display: block;
+        cursor: pointer;
+        user-select: none;
         line-height: 38px;
         text-decoration: none;
         text-transform: capitalize;
         color: #222222;
         background-color: #e6e6e6;
         padding: 0 11px;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        i {
+            margin-left: 8px;
+        }
         &:hover {
             color: #e6e6e6;
             background-color: #222222;
+        }
+    }
+    .browse-drop {
+        flex-direction: column;
+        position: absolute;
+        width: 97px;
+        margin-top: 37px;
+        height: 0;
+        overflow: hidden;
+        background-color: #a4a4a4;
+        a {
+            outline: 1px solid #ffffff;
+            cursor: pointer;
+            user-select: none;
         }
     }
     input {
@@ -92,32 +128,83 @@
     }
 }
 
-.account {
-    font-family: Lato;
-    font-size: 15px;
-    letter-spacing: 0.38px;
-    line-height: 38px;
-    color: white;
-    text-decoration: none;
-    text-transform: capitalize;
-    text-align: center;
+.search input[type="checkbox"] {
+    display: none;
+}
+
+.search input[type="checkbox"]:checked+label>a>i {
+    transform: rotate(180deg);
+}
+
+.search input[type="checkbox"]:checked+label+div {
+    display: flex;
+    height: 114px;
+}
+
+.cart {
+    margin-right: 26px;
+}
+
+.menu-acc {
+    position: relative;
+    .account {
+        font-size: 15px;
+        letter-spacing: 0.38px;
+        line-height: 38px;
+        display: block;
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize;
+        text-align: center;
+        width: 130px;
+        height: 38px;
+        background-color: #f16d7f;
+        transition: all 0.3s ease-in-out;
+        i {
+            margin-left: 8px;
+        }
+        &:hover {
+            color: #e6e6e6;
+            background-color: #222222;
+        }
+    }
+}
+
+.account-drop {
+    position: absolute;
+    height: 0;
     width: 130px;
-    height: 38px;
+    flex-direction: column;
+    overflow: hidden;
     background-color: #f16d7f;
-    margin-left: 26px;
+    color: #ffffff;
+    text-transform: capitalize;
     transition: all 0.3s ease-in-out;
-    &:hover {
-        color: #e6e6e6;
-        background-color: #222222;
+    a {
+        padding: 8px 13px;
+        cursor: pointer;
+        user-select: none;
+        border-top: 1px solid #ffffff;
+        &:hover {
+            color: #e6e6e6;
+            background-color: #222222;
+        }
     }
 }
 
-a {
+.menu-acc:hover .account-drop {
+    display: flex;
+    height: auto;
     i {
-        margin-left: 8px;
+        transform: rotate(180deg);
     }
 }
 
+.menu-acc:hover i {
+    transform: rotate(180deg);
+}
+
+//menu===================================================================================
 .menu-nav {
     height: 50px;
     border-top: 1px solid #e6e6e6;
@@ -135,24 +222,21 @@ ul {
         display: inline-block;
         list-style-type: none;
         a {
-            font-family: Lato;
             font-size: 14px;
             font-weight: bold;
             text-decoration: none;
             text-transform: uppercase;
             color: #222222;
-            padding: 10px 20px;
-            transition: all 0.3s ease-in-out;
-        }
-    }
-    a {
-        &:hover {
-            color: white;
-            background-color: #f16d7f;
+            padding: 15px 20px;
+            transition: all 0.1s ease-in-out;
+            &:hover {
+                border-top: 3px solid #f16d7f;
+                color: #f16d7f;
+            }
         }
     }
 }
 
 .active {
-    border-bottom: 2px solid #222222;
+    border-bottom: 3px solid #f16d7f;
 }

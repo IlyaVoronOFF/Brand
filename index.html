@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <title>Home</title>
 </head>
 
@@ -22,17 +23,29 @@
                             </a>
                         </div>
                         <form action="#" class="search" name="search" method="GET">
-                            <a href="#">browse <i class="fas fa-caret-down"></i></a>
-                            <input type="text" placeholder="Search for item..." name="" id="">
+                            <input type="checkbox" id="browse">
+                            <label for="browse"><a>browse <i class="fas fa-caret-down"></i></a></label>
+                            <div class="browse-drop">
+                                <a>men</a>
+                                <a>women</a>
+                                <a>kids</a>
+                            </div>
+                            <input type="text" placeholder="Search for item...">
                             <button type="submit"><i class="fas fa-search"></i></button>
                         </form>
                     </div>
 
                     <div class="head-right">
-                        <a href="#" class="cart">
-                            <picture><img src="img/header/cart.svg" alt="cart"></picture>
+                        <a href="shopping-cart.html" class="cart">
+                            <picture><img src="img/header/cart.png" alt="cart"></picture>
                         </a>
-                        <a href="#" class="account">My account <i class="fas fa-caret-down"></i></a>
+                        <div class="menu-acc">
+                            <a href="#" class="account">My account <i class="fas fa-caret-down"></i></a>
+                            <div class="account-drop">
+                                <a>log in</a>
+                                <a>registration</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -40,10 +53,10 @@
                     <ul class="menu">
                         <li><a href="#" class="menu__link-1 active">Home</a></li>
                         <li>
-                            <a href="#" class="menu__link-2">Man</a>
+                            <a href="product.html" class="menu__link-2">Man</a>
                         </li>
                         <li>
-                            <a href="#" class="menu__link-3">Women</a>
+                            <a href="single-page.html" class="menu__link-3">Women</a>
                         </li>
                         <li>
                             <a href="#" class="menu__link-4">Kids</a>
@@ -55,7 +68,7 @@
                             <a href="#" class="menu__link-6">Featured</a>
                         </li>
                         <li>
-                            <a href="#" class="menu__link-">Hot deals</a>
+                            <a href="checkout.html" class="menu__link-7">Hot deals</a>
                         </li>
                     </ul>
                 </nav>
@@ -117,7 +130,7 @@
                     <img src="img/product/1.jpg" alt="product-1">
                     <div class="hover-bg"><a href="#"><i class="fas fa-shopping-cart"></i> <span>Add to cart</span></a></div>
                     <div class="product-item__desc">
-                        <div class="product-item__name">Mango People T-shirt Shop for items based on what we featured in this week</div>
+                        <div class="product-item__name"><a href="#">Mango People T-shirt Shop for items based on what we featured in this week</a></div>
                         <div class="product-item__detail">
                             <div class="product-item__price">$52.00</div>
                             <div class="product-item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
@@ -128,7 +141,7 @@
                     <img src="img/product/2.jpg" alt="product-2">
                     <div class="hover-bg"><a href="#"><i class="fas fa-shopping-cart"></i> <span>Add to cart</span></a></div>
                     <div class="product-item__desc">
-                        <div class="product-item__name">Mango People T-shirt</div>
+                        <div class="product-item__name"><a href="#">Mango People T-shirt</a></div>
                         <div class="product-item__detail">
                             <div class="product-item__price">$52.00</div>
                             <div class="product-item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
@@ -139,7 +152,7 @@
                     <img src="img/product/3.jpg" alt="product-3">
                     <div class="hover-bg"><a href="#"><i class="fas fa-shopping-cart"></i> <span>Add to cart</span></a></div>
                     <div class="product-item__desc">
-                        <div class="product-item__name">Mango People T-shirt</div>
+                        <div class="product-item__name"><a href="#">Mango People T-shirt</a></div>
                         <div class="product-item__detail">
                             <div class="product-item__price">$52.00</div>
                             <div class="product-item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
@@ -150,7 +163,7 @@
                     <img src="img/product/4.jpg" alt="product-4">
                     <div class="hover-bg"><a href="#"><i class="fas fa-shopping-cart"></i> <span>Add to cart</span></a></div>
                     <div class="product-item__desc">
-                        <div class="product-item__name">Mango People T-shirt</div>
+                        <div class="product-item__name"><a href="#">Mango People T-shirt</a></div>
                         <div class="product-item__detail">
                             <div class="product-item__price">$52.00</div>
                             <div class="product-item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
@@ -161,7 +174,7 @@
                     <img src="img/product/5.jpg" alt="product-5">
                     <div class="hover-bg"><a href="#"><i class="fas fa-shopping-cart"></i> <span>Add to cart</span></a></div>
                     <div class="product-item__desc">
-                        <div class="product-item__name">Mango People T-shirt</div>
+                        <div class="product-item__name"><a href="#">Mango People T-shirt</a></div>
                         <div class="product-item__detail">
                             <div class="product-item__price">$52.00</div>
                             <div class="product-item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
@@ -172,7 +185,7 @@
                     <img src="img/product/6.jpg" alt="product-6">
                     <div class="hover-bg"><a href="#"><i class="fas fa-shopping-cart"></i> <span>Add to cart</span></a></div>
                     <div class="product-item__desc">
-                        <div class="product-item__name">Mango People T-shirt</div>
+                        <div class="product-item__name"><a href="#">Mango People T-shirt</a></div>
                         <div class="product-item__detail">
                             <div class="product-item__price">$52.00</div>
                             <div class="product-item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
@@ -183,7 +196,7 @@
                     <img src="img/product/7.jpg" alt="product-7">
                     <div class="hover-bg"><a href="#"><i class="fas fa-shopping-cart"></i> <span>Add to cart</span></a></div>
                     <div class="product-item__desc">
-                        <div class="product-item__name">Mango People T-shirt</div>
+                        <div class="product-item__name"><a href="#">Mango People T-shirt</a></div>
                         <div class="product-item__detail">
                             <div class="product-item__price">$52.00</div>
                             <div class="product-item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
@@ -194,16 +207,15 @@
                     <img src="img/product/8.jpg" alt="product-8">
                     <div class="hover-bg"><a href="#"><i class="fas fa-shopping-cart"></i> <span>Add to cart</span></a></div>
                     <div class="product-item__desc">
-                        <div class="product-item__name">Mango People T-shirt</div>
+                        <div class="product-item__name"><a href="#">Mango People T-shirt</a></div>
                         <div class="product-item__detail">
                             <div class="product-item__price">$52.00</div>
                             <div class="product-item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="product-btn">Browse All Product <i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
-
+            <a href="#" class="product-btn">Browse All Product <i class="fas fa-long-arrow-alt-right"></i></a>
         </div>
     </div>
     <!-- discount -->
@@ -216,26 +228,28 @@
                     <p>FOR WOMEN</p>
                 </div>
             </div>
-            <div class="discount__item">
-                <img src="img/discount/Forma 1.png" alt="delivery">
-                <div class="item__text">
-                    <h1>Free Delivery</h1>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            <div class="item-group">
+                <div class="discount__item">
+                    <img src="img/discount/Forma-1.png" alt="delivery">
+                    <div class="item__text">
+                        <h1>Free Delivery</h1>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="discount__item">
-                <img src="img/discount/Forma 2.png" alt="sales">
-                <div class="item__text">
-                    <h1>Sales & discounts</h1>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-                    </p>
+                <div class="discount__item">
+                    <img src="img/discount/Forma-2.png" alt="sales">
+                    <div class="item__text">
+                        <h1>Sales & discounts</h1>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="discount__item">
-                <img src="img/discount/Forma 3.png" alt="quality">
-                <div class="item__text">
-                    <h1>Quality assurance</h1>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                <div class="discount__item">
+                    <img src="img/discount/Forma-3.png" alt="quality">
+                    <div class="item__text">
+                        <h1>Quality assurance</h1>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -262,7 +276,7 @@
                     <h1>subscribe</h1>
                     <p>FOR OUR NEWLETTER AND PROMOTION</p>
                     <form action="#" method="get">
-                        <input type="email" placeholder="Enter Your Email" name="" id="">
+                        <input type="email" placeholder="Enter Your Email">
                         <button type="submit">subscribe</button>
                     </form>
                 </div>
@@ -270,62 +284,66 @@
         </div>
     </div>
     <!-- footer -->
-    <div class="footer-wrap">
-        <div class="footer-top content">
-            <div class="footer__description">
-                <div class="logo">
-                    <a href="#">
-                        <img src="img/header/logo.png" alt="logo">
-                        <h1>Bran<span>d</span></h1>
-                    </a>
+    <footer>
+        <div class="footer-wrap">
+            <div class="footer-top content">
+                <div class="footer__description">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/header/logo.png" alt="logo">
+                            <h1>Bran<span>d</span></h1>
+                        </a>
+                    </div>
+                    <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.<br><br>                        Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize. Objectively strategize seamless relationships via resource sucking
+                        testing procedures. Proactively cultivate next-generation results for value-added methodologies. Dynamically plagiarize unique methodologies after performance based methodologies. Monotonectally empower stand-alone mindshare rather
+                        than ubiquitous opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy. Compellingly envisioneer corporate methods of empowerment before standards compliant technologies. Objectively facilitate
+                        progressive.
+                    </p>
                 </div>
-                <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.<br><br>                    Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize. Objectively strategize seamless relationships via resource sucking testing
-                    procedures. Proactively cultivate next-generation results for value-added methodologies. Dynamically plagiarize unique methodologies after performance based methodologies. Monotonectally empower stand-alone mindshare rather than ubiquitous
-                    opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy. Compellingly envisioneer corporate methods of empowerment before standards compliant technologies. Objectively facilitate progressive.</p>
-            </div>
 
-            <div class="footer__menu">
-                <div class="column-menu">
-                    <h1>COMPANY</h1>
-                    <a href="#">home</a>
-                    <a href="#">shop</a>
-                    <a href="#">about</a>
-                    <a href="#">how it works</a>
-                    <a href="#">contact</a>
-                </div>
-                <div class="column-menu">
-                    <h1>information</h1>
-                    <a href="#">tearms & condition</a>
-                    <a href="#">privacy policy</a>
-                    <a href="#">how to buy</a>
-                    <a href="#">how to sell</a>
-                    <a href="#">promotion</a>
-                </div>
-                <div class="column-menu">
-                    <h1>shop category</h1>
-                    <a href="#">men</a>
-                    <a href="#">women</a>
-                    <a href="#">child</a>
-                    <a href="#">apparel</a>
-                    <a href="#">brows all</a>
+                <nav class="footer__menu">
+                    <div class="column-menu">
+                        <h2>COMPANY</h2>
+                        <a href="#">home</a>
+                        <a href="#">shop</a>
+                        <a href="#">about</a>
+                        <a href="#">how it works</a>
+                        <a href="#">contact</a>
+                    </div>
+                    <div class="column-menu">
+                        <h2>information</h2>
+                        <a href="#">tearms & condition</a>
+                        <a href="#">privacy policy</a>
+                        <a href="#">how to buy</a>
+                        <a href="#">how to sell</a>
+                        <a href="#">promotion</a>
+                    </div>
+                    <div class="column-menu">
+                        <h2>shop category</h2>
+                        <a href="#">men</a>
+                        <a href="#">women</a>
+                        <a href="#">child</a>
+                        <a href="#">apparel</a>
+                        <a href="#">brows all</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <div class="bottom-container content">
+                    <div class="copyright">
+                        <p>&copy; 2017 Brand All Rights Reserved.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <div class="bottom-container content">
-                <div class="copyright">
-                    <p>&copy; 2017 Brand All Rights Reserved.</p>
-                </div>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>

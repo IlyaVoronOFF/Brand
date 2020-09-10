@@ -44,7 +44,7 @@
             object-position: center;
             height: 100%;
             width: 100%;
-            transition: all 0.5s ease-in-out;
+            transition: all 0.3s ease-in-out;
             &:hover {
                 transform: scale(1.2);
             }
@@ -94,6 +94,11 @@
 }
 
 //product-block==================================================================================
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
 .product-title {
     width: 100%;
     text-align: center;
@@ -152,6 +157,7 @@
         position: absolute;
         left: 75px;
         top: 97px;
+        width: 45%;
         padding: 10px 12px;
         color: white;
         font-size: 13px;
@@ -182,10 +188,16 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    a {
+        text-decoration: none;
+        color: #222222;
+        &:hover {
+            color: #f16d7f;
+        }
+    }
 }
 
 .product-item__price {
-    font-family: Lato;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -218,12 +230,16 @@
 //discount=====================================================================================
 .discount {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    height: 529px;
+    justify-content: space-between;
     margin: 97px auto;
     background-color: #222224;
+    .item-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
     &__item {
         display: flex;
         width: 373px;
@@ -252,15 +268,13 @@
     }
     &__banner {
         display: flex;
-        height: inherit;
-        width: 767px;
+        max-width: 767px;
         position: relative;
         overflow: hidden;
         img {
-            height: inherit;
-            width: inherit;
+            width: 100%;
             object-fit: cover;
-            transition: all 0.5s ease-in-out;
+            transition: all 0.3s ease-in-out;
             &:hover {
                 transform: scale(1.2);
             }
@@ -285,124 +299,6 @@
                 letter-spacing: 0.8px;
                 color: white;
                 text-transform: uppercase;
-            }
-        }
-    }
-}
-
-//subscribe====================================================================================
-.subscribe-wrap {
-    background: url(../img/subscribe/bg-subscribe.jpg) #e6e6e680;
-    background-repeat: no-repeat;
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-position: bottom;
-    .subscribe {
-        height: 438px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .feedback {
-            flex: 1;
-            display: flex;
-            align-items: end;
-            img {
-                margin-right: 28px;
-            }
-            &__content {
-                margin-right: 40px;
-                p {
-                    font-size: 16px;
-                    font-style: italic;
-                    line-height: 26px;
-                    letter-spacing: 0.4px;
-                    margin-bottom: 19px;
-                }
-                h2 {
-                    font-size: 16px;
-                    font-weight: bold;
-                    letter-spacing: 0.4px;
-                    color: #f16d7f;
-                    text-transform: capitalize;
-                }
-                h3 {
-                    font-size: 12px;
-                    font-weight: 500;
-                    line-height: 14px;
-                    letter-spacing: 0.3px;
-                    text-transform: capitalize;
-                    margin-bottom: 41px;
-                }
-                .pagination {
-                    display: flex;
-                    a {
-                        width: 38px;
-                        margin-right: 13px;
-                        border: 2px solid #e6e6e6;
-                    }
-                    .pag-active {
-                        border-color: #f16d7f;
-                    }
-                }
-            }
-        }
-        .subscribe__form {
-            flex: 1;
-            .form__container {
-                text-align: center;
-                padding: 0 70px;
-                h1 {
-                    font-size: 24px;
-                    font-weight: 400;
-                    line-height: 45px;
-                    letter-spacing: 0.6px;
-                    text-transform: uppercase;
-                }
-                p {
-                    font-size: 14px;
-                    letter-spacing: 0.35px;
-                    text-transform: uppercase;
-                    margin-bottom: 35px;
-                }
-                form {
-                    display: flex;
-                    justify-content: space-between;
-                    height: 46px;
-                    border-radius: 50px;
-                    background-color: #e6e6e6;
-                    overflow: hidden;
-                    input {
-                        border: none;
-                        outline: none;
-                        background: none;
-                        width: 100%;
-                        padding: 0 28px;
-                        border-radius: 50px 0 0 50px;
-                        transition: all 0.3s ease-in-out;
-                        &::placeholder {
-                            opacity: 0.7;
-                        }
-                        &:hover {
-                            box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-                        }
-                    }
-                }
-                button {
-                    border: none;
-                    outline: none;
-                    cursor: pointer;
-                    width: 38%;
-                    background-color: #f16d7f;
-                    font-size: 14px;
-                    letter-spacing: 0.35px;
-                    color: white;
-                    text-transform: capitalize;
-                    transition: all 0.3s ease-in-out;
-                    &:hover {
-                        color: white;
-                        background-color: #222222;
-                    }
-                }
             }
         }
     }
