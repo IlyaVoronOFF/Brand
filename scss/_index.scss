@@ -94,6 +94,11 @@
 }
 
 //product-block==================================================================================
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
 .product-title {
     width: 100%;
     text-align: center;
@@ -186,11 +191,13 @@
     a {
         text-decoration: none;
         color: #222222;
+        &:hover {
+            color: #f16d7f;
+        }
     }
 }
 
 .product-item__price {
-    font-family: Lato;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -223,16 +230,19 @@
 //discount=====================================================================================
 .discount {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    height: 529px;
+    justify-content: space-between;
     margin: 97px auto;
     background-color: #222224;
+    .item-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
     &__item {
         display: flex;
         width: 373px;
-        height: 20%;
         img {
             height: 40px;
             width: 40px;
@@ -258,13 +268,11 @@
     }
     &__banner {
         display: flex;
-        height: inherit;
-        width: 767px;
+        max-width: 767px;
         position: relative;
         overflow: hidden;
         img {
-            height: inherit;
-            width: inherit;
+            width: 100%;
             object-fit: cover;
             transition: all 0.3s ease-in-out;
             &:hover {

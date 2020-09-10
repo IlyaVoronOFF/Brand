@@ -66,8 +66,10 @@
                 label {
                     margin-left: 15px;
                     cursor: pointer;
+                    user-select: none;
+                    transition: all 0.3 ease-in-out;
                     &:hover {
-                        text-decoration: underline;
+                        color: #ef5b70;
                     }
                 }
             }
@@ -108,6 +110,7 @@
             }
         }
         &__right {
+            width: 35%;
             .email-input {
                 margin-bottom: 30px;
                 p {
@@ -123,7 +126,6 @@
                     input {
                         outline: none;
                         border: solid 1px #eaeaea;
-                        width: 390px;
                         padding: 15px 25px;
                         transition: all 0.3s ease-in-out;
                         &:hover,
@@ -140,6 +142,7 @@
             }
             .btn-block {
                 display: flex;
+                flex-wrap: wrap;
                 align-items: center;
                 button {
                     outline: none;

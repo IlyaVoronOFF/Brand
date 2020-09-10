@@ -14,15 +14,18 @@
     }
 }
 
-body {
-    font-family: "Lato", sans-serif;
+html {
+    body {
+        font-family: "Lato", sans-serif;
+    }
 }
 
 .content {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
 a {
-    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
 }

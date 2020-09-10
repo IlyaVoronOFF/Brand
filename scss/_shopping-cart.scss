@@ -182,8 +182,10 @@
     box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
+//order===========================================================================================
 .order-registration {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     margin-top: 63px;

@@ -23,7 +23,13 @@
                             </a>
                         </div>
                         <form action="#" class="search" name="search" method="GET">
-                            <a href="#">browse <i class="fas fa-caret-down"></i></a>
+                            <input type="checkbox" id="browse">
+                            <label for="browse"><a>browse <i class="fas fa-caret-down"></i></a></label>
+                            <div class="browse-drop">
+                                <a>men</a>
+                                <a>women</a>
+                                <a>kids</a>
+                            </div>
                             <input type="text" placeholder="Search for item...">
                             <button type="submit"><i class="fas fa-search"></i></button>
                         </form>
@@ -33,7 +39,13 @@
                         <a href="shopping-cart.html" class="cart">
                             <picture><img src="img/header/cart.png" alt="cart"></picture>
                         </a>
-                        <a href="#" class="account">My account <i class="fas fa-caret-down"></i></a>
+                        <div class="menu-acc">
+                            <a href="#" class="account">My account <i class="fas fa-caret-down"></i></a>
+                            <div class="account-drop">
+                                <a>log in</a>
+                                <a>registration</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -41,10 +53,10 @@
                     <ul class="menu">
                         <li><a href="#" class="menu__link-1 active">Home</a></li>
                         <li>
-                            <a href="#" class="menu__link-2">Man</a>
+                            <a href="product.html" class="menu__link-2">Man</a>
                         </li>
                         <li>
-                            <a href="#" class="menu__link-3">Women</a>
+                            <a href="single-page.html" class="menu__link-3">Women</a>
                         </li>
                         <li>
                             <a href="#" class="menu__link-4">Kids</a>
@@ -56,7 +68,7 @@
                             <a href="#" class="menu__link-6">Featured</a>
                         </li>
                         <li>
-                            <a href="#" class="menu__link-">Hot deals</a>
+                            <a href="checkout.html" class="menu__link-7">Hot deals</a>
                         </li>
                     </ul>
                 </nav>
@@ -202,9 +214,8 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="product-btn">Browse All Product <i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
-
+            <a href="#" class="product-btn">Browse All Product <i class="fas fa-long-arrow-alt-right"></i></a>
         </div>
     </div>
     <!-- discount -->
@@ -217,26 +228,28 @@
                     <p>FOR WOMEN</p>
                 </div>
             </div>
-            <div class="discount__item">
-                <img src="img/discount/Forma-1.png" alt="delivery">
-                <div class="item__text">
-                    <h1>Free Delivery</h1>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            <div class="item-group">
+                <div class="discount__item">
+                    <img src="img/discount/Forma-1.png" alt="delivery">
+                    <div class="item__text">
+                        <h1>Free Delivery</h1>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="discount__item">
-                <img src="img/discount/Forma-2.png" alt="sales">
-                <div class="item__text">
-                    <h1>Sales & discounts</h1>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-                    </p>
+                <div class="discount__item">
+                    <img src="img/discount/Forma-2.png" alt="sales">
+                    <div class="item__text">
+                        <h1>Sales & discounts</h1>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="discount__item">
-                <img src="img/discount/Forma-3.png" alt="quality">
-                <div class="item__text">
-                    <h1>Quality assurance</h1>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                <div class="discount__item">
+                    <img src="img/discount/Forma-3.png" alt="quality">
+                    <div class="item__text">
+                        <h1>Quality assurance</h1>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
                 </div>
             </div>
         </div>

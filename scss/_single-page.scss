@@ -137,7 +137,7 @@
                         width: 144px;
                         border: 1px solid #eaeaea;
                         padding: 10px 14px;
-                        color: #bcbcbc;
+                        color: #2f2f2f;
                         outline: none;
                         margin-top: 10px;
                         text-transform: capitalize;
@@ -185,7 +185,7 @@
                     }
                     .cart-white {
                         position: absolute;
-                        left: 201px;
+                        margin-left: -52px;
                         opacity: 0;
                         transition: all 0.3s ease-in-out;
                     }
@@ -214,6 +214,7 @@
     }
     .recommended-block {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin: 60px auto;
     }

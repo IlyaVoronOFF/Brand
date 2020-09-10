@@ -23,17 +23,29 @@
                             </a>
                         </div>
                         <form action="#" class="search" name="search" method="GET">
-                            <a href="#">browse <i class="fas fa-caret-down"></i></a>
+                            <input type="checkbox" id="browse">
+                            <label for="browse"><a>browse <i class="fas fa-caret-down"></i></a></label>
+                            <div class="browse-drop">
+                                <a>men</a>
+                                <a>women</a>
+                                <a>kids</a>
+                            </div>
                             <input type="text" placeholder="Search for item...">
                             <button type="submit"><i class="fas fa-search"></i></button>
                         </form>
                     </div>
 
                     <div class="head-right">
-                        <a href="#" class="cart">
+                        <a href="shopping-cart.html" class="cart">
                             <picture><img src="img/header/cart.png" alt="cart"></picture>
                         </a>
-                        <a href="#" class="account">My account <i class="fas fa-caret-down"></i></a>
+                        <div class="menu-acc">
+                            <a href="#" class="account">My account <i class="fas fa-caret-down"></i></a>
+                            <div class="account-drop">
+                                <a>log in</a>
+                                <a>registration</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -41,10 +53,10 @@
                     <ul class="menu">
                         <li><a href="index.html" class="menu__link-1">Home</a></li>
                         <li>
-                            <a href="#" class="menu__link-2">Man</a>
+                            <a href="product.html" class="menu__link-2">Man</a>
                         </li>
                         <li>
-                            <a href="#" class="menu__link-3">Women</a>
+                            <a href="#" class="menu__link-3 active">Women</a>
                         </li>
                         <li>
                             <a href="#" class="menu__link-4">Kids</a>
@@ -56,7 +68,7 @@
                             <a href="#" class="menu__link-6">Featured</a>
                         </li>
                         <li>
-                            <a href="#" class="menu__link-">Hot deals</a>
+                            <a href="checkout.html" class="menu__link-7">Hot deals</a>
                         </li>
                     </ul>
                 </nav>
@@ -106,31 +118,30 @@
                         <form action="#" method="get">
                             <div class="input-group">
                                 <label>CHOOSE COLOR</label>
-                                <p>
-                                    <div class="color"></div>
-                                    <select size="1" class="padding-color">
+                                <div class="color"></div>
+                                <select size="1" class="padding-color">
                                     <option value="red" selected>red</option>
                                     <option value="blue" >blue</option>
                                     <option value="green">green</option>
                                     <option value="black">black</option>
-                                 </select> </p>
+                                 </select>
                             </div>
                             <div class="input-group">
                                 <label>CHOOSE size</label>
-                                <p> <select size="1">
+                                <select size="1">
                                     <option value="XXL" selected>
-                                       <div class="size__xxl">XXL</div>
+                                       XXL
                                     </option>
                                     <option value="XL">
-                                       <div class="size__xl"></div>XL
+                                       XL
                                     </option>
                                     <option value="L">
-                                       <div class="size__l"></div>L
+                                       L
                                     </option>
                                     <option value="M">
-                                       <div class="size__m"></div>M
+                                       M
                                     </option>
-                                 </select> </p>
+                                 </select>
                             </div>
                             <div class="input-group">
                                 <label>QUANTITY</label>

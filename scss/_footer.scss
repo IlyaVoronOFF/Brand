@@ -8,6 +8,7 @@
     .subscribe {
         height: 438px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         .feedback {
@@ -125,6 +126,7 @@
 
 .footer-top {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 109px;
@@ -175,7 +177,7 @@
                 text-transform: capitalize;
                 text-decoration: none;
                 position: relative;
-                transition: all 0.3s ease-in-out;
+                transition: all 0.2s ease-in-out;
                 &:hover,
                 &:hover::after {
                     color: #222222;
@@ -191,7 +193,7 @@
                 height: 2px;
                 width: 0;
                 background-color: #222222;
-                transition: width 0.3s ease-in-out;
+                transition: width 0.2s ease-in-out;
             }
         }
     }
@@ -217,7 +219,7 @@
             margin-right: 8px;
             display: inline-block;
             text-align: center;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.2s ease-in-out;
             &:hover {
                 background-color: #f16d7f;
                 transform: scale(1.1);
@@ -228,7 +230,7 @@
                 width: inherit;
                 color: #b2b2b2;
                 margin: 0;
-                transition: all 0.3s ease-in-out;
+                transition: all 0.2s ease-in-out;
                 &:hover {
                     color: white;
                 }
