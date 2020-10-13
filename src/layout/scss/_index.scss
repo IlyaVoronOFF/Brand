@@ -153,7 +153,10 @@
     background-color: rgba(0, 0, 0, 0.7);
     transition: opacity 0.3s ease-in-out;
     opacity: 0;
-    a {
+    button {
+        outline: none;
+        background: none;
+        cursor: pointer;
         position: absolute;
         left: 75px;
         top: 97px;
@@ -165,8 +168,8 @@
         text-transform: capitalize;
         border: 1px solid white;
         transition: all 0.3s;
-        i {
-            margin: 0;
+        &:hover {
+            box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.54);
         }
     }
 }

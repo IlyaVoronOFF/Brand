@@ -36,9 +36,39 @@
                     </div>
 
                     <div class="head-right">
-                        <a href="shopping-cart.html" class="cart">
-                            <picture><img src="../src/assets/img/header/cart.png" alt="cart"></picture>
-                        </a>
+                        <form>
+                            <input type="checkbox" id="basket">
+                            <label for="basket">
+                                <img src="../src/assets/img/header/cart.png" alt="cart">
+                            </label>
+                            <div class="basket-drop">
+                                <div class="basket-items">
+                                    <!-- <div class="basket-item">
+                                        <img src="https://raw.githubusercontent.com/IlyaVoronOFF/pictureStatic/master/Brand/product/1.jpg" alt="product-1">
+                                        <div class="basket-item-details">
+                                            <a href="#">Mango People T-Shirt</a>
+                                            <p>
+                                                <form action="#">
+                                                    <input type="text" id="basket-quantity" value="3"> <span> X $54.00 - $<output name="result-item">128</output></span>
+                                            </p>
+                                        </div>
+                                        <i class="fas fa-times-circle"></i>
+                                    </div> -->
+                                    <div class="basket-empty">
+                                        <span>Корзина пуста</span>
+                                    </div>
+                                </div>
+                                <div class="basket-total">
+                                    <p>TOTAL</p>
+                                    <p>$ <output name="result">0</output></p>
+                                </div>
+                                <div class="basket-btn">
+                                    <button type="submit">Checkout</button>
+                                    <button type="reset">Go to cart</button>
+                        </form>
+                        </div>
+                        </div>
+                        </form>
                         <div class="menu-acc">
                             <a href="#" class="account">My account <i class="fas fa-caret-down"></i></a>
                             <div class="account-drop">
@@ -125,95 +155,7 @@
                 <p>Shop for items based on what we featured in this week</p>
             </div>
 
-            <div class="product-items">
-                <div class="product-item">
-                    <img src="https://raw.githubusercontent.com/IlyaVoronOFF/pictureStatic/master/Brand/product/1.jpg" alt="product-1">
-                    <div class="hover-bg"><a href="#"><i class="fas fa-shopping-cart"></i> <span>Add to cart</span></a></div>
-                    <div class="product-item__desc">
-                        <div class="product-item__name"><a href="#">Mango People T-shirt Shop for items based on what we featured in this week</a></div>
-                        <div class="product-item__detail">
-                            <div class="product-item__price">$52.00</div>
-                            <div class="product-item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <img src="https://raw.githubusercontent.com/IlyaVoronOFF/pictureStatic/master/Brand/product/2.jpg" alt="product-2">
-                    <div class="hover-bg"><a href="#"><i class="fas fa-shopping-cart"></i> <span>Add to cart</span></a></div>
-                    <div class="product-item__desc">
-                        <div class="product-item__name"><a href="#">Mango People T-shirt</a></div>
-                        <div class="product-item__detail">
-                            <div class="product-item__price">$52.00</div>
-                            <div class="product-item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <img src="https://raw.githubusercontent.com/IlyaVoronOFF/pictureStatic/master/Brand/product/3.jpg" alt="product-3">
-                    <div class="hover-bg"><a href="#"><i class="fas fa-shopping-cart"></i> <span>Add to cart</span></a></div>
-                    <div class="product-item__desc">
-                        <div class="product-item__name"><a href="#">Mango People T-shirt</a></div>
-                        <div class="product-item__detail">
-                            <div class="product-item__price">$52.00</div>
-                            <div class="product-item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <img src="https://raw.githubusercontent.com/IlyaVoronOFF/pictureStatic/master/Brand/product/4.jpg" alt="product-4">
-                    <div class="hover-bg"><a href="#"><i class="fas fa-shopping-cart"></i> <span>Add to cart</span></a></div>
-                    <div class="product-item__desc">
-                        <div class="product-item__name"><a href="#">Mango People T-shirt</a></div>
-                        <div class="product-item__detail">
-                            <div class="product-item__price">$52.00</div>
-                            <div class="product-item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <img src="https://raw.githubusercontent.com/IlyaVoronOFF/pictureStatic/master/Brand/product/5.jpg" alt="product-5">
-                    <div class="hover-bg"><a href="#"><i class="fas fa-shopping-cart"></i> <span>Add to cart</span></a></div>
-                    <div class="product-item__desc">
-                        <div class="product-item__name"><a href="#">Mango People T-shirt</a></div>
-                        <div class="product-item__detail">
-                            <div class="product-item__price">$52.00</div>
-                            <div class="product-item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <img src="https://raw.githubusercontent.com/IlyaVoronOFF/pictureStatic/master/Brand/product/6.jpg" alt="product-6">
-                    <div class="hover-bg"><a href="#"><i class="fas fa-shopping-cart"></i> <span>Add to cart</span></a></div>
-                    <div class="product-item__desc">
-                        <div class="product-item__name"><a href="#">Mango People T-shirt</a></div>
-                        <div class="product-item__detail">
-                            <div class="product-item__price">$52.00</div>
-                            <div class="product-item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <img src="https://raw.githubusercontent.com/IlyaVoronOFF/pictureStatic/master/Brand/product/7.jpg" alt="product-7">
-                    <div class="hover-bg"><a href="#"><i class="fas fa-shopping-cart"></i> <span>Add to cart</span></a></div>
-                    <div class="product-item__desc">
-                        <div class="product-item__name"><a href="#">Mango People T-shirt</a></div>
-                        <div class="product-item__detail">
-                            <div class="product-item__price">$52.00</div>
-                            <div class="product-item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <img src="https://raw.githubusercontent.com/IlyaVoronOFF/pictureStatic/master/Brand/product/8.jpg" alt="product-8">
-                    <div class="hover-bg"><a href="#"><i class="fas fa-shopping-cart"></i> <span>Add to cart</span></a></div>
-                    <div class="product-item__desc">
-                        <div class="product-item__name"><a href="#">Mango People T-shirt</a></div>
-                        <div class="product-item__detail">
-                            <div class="product-item__price">$52.00</div>
-                            <div class="product-item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="product-items" id="catalog-index">
             </div>
             <a href="#" class="product-btn">Browse All Product <i class="fas fa-long-arrow-alt-right"></i></a>
         </div>
@@ -345,7 +287,8 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="../src/components/basket.js"></script>
+    <script src="../src/components/catalog-index.js"></script>
 </body>
 
 </html>
