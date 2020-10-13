@@ -18,7 +18,7 @@ const catalog = {
             htmlStr += `
                   <div class="product-item">
                     <img src="${imgURL}" alt="product-${index + 1}">
-                    <div class="hover-bg"><a href="#"><i class="fas fa-shopping-cart"></i> <span>Add to cart</span></a></div>
+                    <div class="hover-bg"><button><i class="fas fa-shopping-cart"></i> Add to cart</button></div>
                     <div class="product-item__desc">
                         <div class="product-item__name"><a href="#">${item.productName}</a></div>
                         <div class="product-item__detail">
